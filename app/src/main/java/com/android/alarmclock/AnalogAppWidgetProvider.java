@@ -24,10 +24,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
 
-import com.android.deskclock.DeskClock;
-import com.android.deskclock.R;
-import com.android.deskclock.Utils;
-import com.android.deskclock.data.DataModel;
+import com.android.deskclock2.DeskClock;
+import com.android.deskclock2.R;
+import com.android.deskclock2.Utils;
+import com.android.deskclock2.data.DataModel;
 
 /**
  * Simple widget to show an analog clock.

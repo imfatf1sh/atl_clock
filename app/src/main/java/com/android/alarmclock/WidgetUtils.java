@@ -21,8 +21,8 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 
-import com.android.deskclock.R;
-import com.android.deskclock.Utils;
+import com.android.deskclock2.R;
+import com.android.deskclock2.Utils;
 
 public final class WidgetUtils {
 

@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.android.deskclock"
+    namespace = "com.android.deskclock2"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.android.deskclock"
+        applicationId = "com.android.deskclock2"
         minSdk = 19
         targetSdk = 25
         vectorDrawables {

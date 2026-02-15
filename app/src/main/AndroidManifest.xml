@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <original-package android:name="com.android.alarmclock" />
-    <original-package android:name="com.android.deskclock" />
+    <original-package android:name="com.android.deskclock2" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -152,7 +152,7 @@
 
         <provider
             android:name=".provider.ClockProvider"
-            android:authorities="com.android.deskclock"
+            android:authorities="com.android.deskclock2"
             android:directBootAware="true"
             android:exported="false" />
 
@@ -194,7 +194,7 @@
 
         <!-- Legacy broadcast receiver that honors old scheduled timers across app upgrade. -->
         <receiver
-            android:name="com.android.deskclock.timer.TimerReceiver"
+            android:name="com.android.deskclock2.timer.TimerReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="times_up" />
@@ -261,7 +261,7 @@
 
             <meta-data
                 android:name="android.appwidget.oldName"
-                android:value="com.android.deskclock.AnalogAppWidgetProvider" />
+                android:value="com.android.deskclock2.AnalogAppWidgetProvider" />
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/analog_appwidget" />
@@ -278,9 +278,9 @@
                 <action android:name="android.intent.action.SCREEN_ON" />
                 <action android:name="android.intent.action.TIME_SET" />
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-                <action android:name="com.android.deskclock.ALARM_CHANGED" />
-                <action android:name="com.android.deskclock.ON_DAY_CHANGE" />
-                <action android:name="com.android.deskclock.WORLD_CITIES_CHANGED" />
+                <action android:name="com.android.deskclock2.ALARM_CHANGED" />
+                <action android:name="com.android.deskclock2.ON_DAY_CHANGE" />
+                <action android:name="com.android.deskclock2.WORLD_CITIES_CHANGED" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
