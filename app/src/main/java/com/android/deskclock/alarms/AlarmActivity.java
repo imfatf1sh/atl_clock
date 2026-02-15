@@ -486,7 +486,7 @@ public class AlarmActivity extends BaseActivity
         mAlarmHandled = true;
         LOGGER.v("Snoozed: %s", mAlarmInstance);
 
-        final int colorAccent = ThemeUtils.resolveColor(this, R.attr.colorAccent);
+        final int colorAccent = ThemeUtils.resolveColor(this, androidx.appcompat.R.attr.colorAccent);
         setAnimatedFractions(1.0f /* snoozeFraction */, 0.0f /* dismissFraction */);
 
         final int snoozeMinutes = DataModel.getDataModel().getSnoozeLength();

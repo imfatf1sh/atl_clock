@@ -76,7 +76,7 @@ public class TimerItem extends LinearLayout {
         mTimerTextController = new TimerTextController(mTimerText);
 
         final Context c = mTimerText.getContext();
-        final int colorAccent = ThemeUtils.resolveColor(c, R.attr.colorAccent);
+        final int colorAccent = ThemeUtils.resolveColor(c, androidx.appcompat.R.attr.colorAccent);
         final int textColorPrimary = ThemeUtils.resolveColor(c, android.R.attr.textColorPrimary);
         mTimerText.setTextColor(new ColorStateList(
                 new int[][] { { -state_activated, -state_pressed }, {} },

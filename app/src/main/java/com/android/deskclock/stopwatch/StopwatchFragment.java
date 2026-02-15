@@ -156,7 +156,7 @@ public final class StopwatchFragment extends DeskClockFragment {
         }
 
         final Context c = mMainTimeText.getContext();
-        final int colorAccent = ThemeUtils.resolveColor(c, R.attr.colorAccent);
+        final int colorAccent = ThemeUtils.resolveColor(c, androidx.appcompat.R.attr.colorAccent);
         final int textColorPrimary = ThemeUtils.resolveColor(c, android.R.attr.textColorPrimary);
         final ColorStateList timeTextColor = new ColorStateList(
                 new int[][] { { -state_activated, -state_pressed }, {} },

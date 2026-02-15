@@ -615,7 +615,7 @@ public final class CitySelectionActivity extends BaseActivity {
 
     private final class SortOrderMenuItemController implements MenuItemController {
 
-        private static final int SORT_MENU_RES_ID = R.id.menu_item_sort;
+        private final int SORT_MENU_RES_ID = R.id.menu_item_sort;
 
         @Override
         public int getId() {

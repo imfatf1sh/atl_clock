@@ -41,7 +41,7 @@ public class SimpleMenuPreference extends DropDownPreference {
     }
 
     public SimpleMenuPreference(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.dropdownPreferenceStyle);
+        this(context, attrs, androidx.preference.R.attr.dropdownPreferenceStyle);
     }
 
     public SimpleMenuPreference(Context context, AttributeSet attrs, int defStyle) {

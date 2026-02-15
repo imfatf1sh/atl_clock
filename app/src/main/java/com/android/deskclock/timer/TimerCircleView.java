@@ -72,7 +72,7 @@ public final class TimerCircleView extends View {
         mRadiusOffset = Utils.calculateRadiusOffset(mStrokeSize, dotDiameter, 0);
 
         mRemainderColor = Color.WHITE;
-        mCompletedColor = ThemeUtils.resolveColor(context, R.attr.colorAccent);
+        mCompletedColor = ThemeUtils.resolveColor(context, androidx.appcompat.R.attr.colorAccent);
 
         mPaint.setAntiAlias(true);
         mPaint.setStyle(Paint.Style.STROKE);

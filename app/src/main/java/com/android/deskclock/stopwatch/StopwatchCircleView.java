@@ -82,7 +82,7 @@ public final class StopwatchCircleView extends View {
         mRadiusOffset = Utils.calculateRadiusOffset(mStrokeSize, dotDiameter, mMarkerStrokeSize);
 
         mRemainderColor = Color.WHITE;
-        mCompletedColor = ThemeUtils.resolveColor(context, R.attr.colorAccent);
+        mCompletedColor = ThemeUtils.resolveColor(context, androidx.appcompat.R.attr.colorAccent);
 
         mPaint.setAntiAlias(true);
         mPaint.setStyle(Paint.Style.STROKE);
