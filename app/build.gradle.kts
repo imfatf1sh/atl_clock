@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId = "com.android.deskclock"
         minSdk = 19
-        targetSdk = 36
+        targetSdk = 25
     }
 
     buildTypes {
