@@ -34,7 +34,6 @@ dependencies {
     implementation("androidx.vectordrawable:vectordrawable:1.1.0-beta01")
     implementation("androidx.appcompat:appcompat:1.1.0-beta01")
     implementation("com.google.android.material:material:1.1.0-alpha05")
-    implementation("androidx.legacy:legacy-support-v13:1.0.0")
     implementation("androidx.preference:preference:1.1.0-beta01")
     implementation("androidx.gridlayout:gridlayout:1.1.0-alpha01")
     implementation("androidx.percentlayout:percentlayout:1.0.0")

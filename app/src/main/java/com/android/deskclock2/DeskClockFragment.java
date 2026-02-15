@@ -16,7 +16,7 @@
 
 package com.android.deskclock2;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import android.view.KeyEvent;

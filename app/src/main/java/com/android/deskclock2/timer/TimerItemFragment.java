@@ -16,7 +16,7 @@
 
 package com.android.deskclock2.timer;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -16,10 +16,10 @@
 
 package com.android.deskclock2;
 
-import android.app.LoaderManager;
+import androidx.loader.app.LoaderManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.Loader;
+import androidx.loader.content.Loader;
 import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;

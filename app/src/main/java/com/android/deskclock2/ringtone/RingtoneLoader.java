@@ -16,7 +16,7 @@
 
 package com.android.deskclock2.ringtone;
 
-import android.content.AsyncTaskLoader;
+import androidx.loader.content.AsyncTaskLoader;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.MatrixCursor;

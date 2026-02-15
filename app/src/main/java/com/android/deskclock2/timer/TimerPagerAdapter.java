@@ -17,10 +17,9 @@
 package com.android.deskclock2.timer;
 
 import android.annotation.SuppressLint;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import androidx.legacy.app.FragmentCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.PagerAdapter;
 import android.util.ArrayMap;
 import android.view.View;
@@ -179,7 +178,7 @@ class TimerPagerAdapter extends PagerAdapter implements TimerListener {
     }
 
     private static void setItemVisible(Fragment item, boolean visible) {
-        FragmentCompat.setMenuVisibility(item, visible);
-        FragmentCompat.setUserVisibleHint(item, visible);
+        item.setMenuVisibility(visible);
+        item.setUserVisibleHint(visible);
     }
 }

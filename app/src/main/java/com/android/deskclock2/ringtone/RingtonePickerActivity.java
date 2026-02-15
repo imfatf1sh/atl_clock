@@ -17,14 +17,14 @@
 package com.android.deskclock2.ringtone;
 
 import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.FragmentManager;
-import android.app.LoaderManager;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.loader.app.LoaderManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.Loader;
+import androidx.loader.content.Loader;
 import android.database.Cursor;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
@@ -207,7 +207,7 @@ public class RingtonePickerActivity extends BaseActivity
         final int titleResourceId = intent.getIntExtra(EXTRA_TITLE, 0);
         setTitle(context.getString(titleResourceId));
 
-        getLoaderManager().initLoader(0 /* id */, null /* args */, this /* callback */);
+        getSupportLoaderManager().initLoader(0 /* id */, null /* args */, this /* callback */);
 
         registerForContextMenu(mRecyclerView);
     }
@@ -355,7 +355,7 @@ public class RingtonePickerActivity extends BaseActivity
         mIndexOfRingtoneToRemove = RecyclerView.NO_POSITION;
 
         // Launch the confirmation dialog.
-        final FragmentManager manager = getFragmentManager();
+        final FragmentManager manager = getSupportFragmentManager();
         final boolean hasPermissions = toRemove.hasPermissions();
         ConfirmRemoveCustomRingtoneDialogFragment.show(manager, toRemove.getUri(), hasPermissions);
         return true;
@@ -519,7 +519,7 @@ public class RingtonePickerActivity extends BaseActivity
                     break;
 
                 case RingtoneViewHolder.CLICK_NO_PERMISSIONS:
-                    ConfirmRemoveCustomRingtoneDialogFragment.show(getFragmentManager(),
+                    ConfirmRemoveCustomRingtoneDialogFragment.show(getSupportFragmentManager(),
                             ((RingtoneHolder) viewHolder.getItemHolder()).getUri(), false);
                     break;
             }
@@ -585,7 +585,7 @@ public class RingtonePickerActivity extends BaseActivity
             mIsPlaying = true;
 
             // Reload the data to reflect the change in the UI.
-            getLoaderManager().restartLoader(0 /* id */, null /* args */,
+            getSupportLoaderManager().restartLoader(0 /* id */, null /* args */,
                     RingtonePickerActivity.this /* callback */);
         }
     }
