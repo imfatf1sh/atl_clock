@@ -28,6 +28,8 @@ import android.os.Bundle;
 import androidx.annotation.StringRes;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
+
+import androidx.core.app.ActivityCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 import androidx.appcompat.app.ActionBar;
@@ -471,9 +473,9 @@ public class DeskClock extends BaseActivity
     }
 
     private void checkPermissions() {
-        if (checkSelfPermission(PERMISSION_POWER_OFF_ALARM)
+        if (ActivityCompat.checkSelfPermission(this, PERMISSION_POWER_OFF_ALARM)
                 != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{PERMISSION_POWER_OFF_ALARM}, CODE_FOR_ALARM_PERMISSION);
+            ActivityCompat.requestPermissions(this, new String[]{PERMISSION_POWER_OFF_ALARM}, CODE_FOR_ALARM_PERMISSION);
         }
     }
 
